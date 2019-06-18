@@ -50,3 +50,12 @@ fb_data <- fb_data[,-31]
 fb_data <- fb_data[,-43]
 fb_data <- fb_data[,-34]
 
+###category selected
+select<-which(fb_data$Page_Category=="2"|fb_data$Page_Category=="4"|fb_data$Page_Category=="8"|fb_data$Page_Category=="9"|fb_data$Page_Category=="18"|fb_data$Page_Category=="24"|fb_data$Page_Category=="25"|fb_data$Page_Category=="28"|fb_data$Page_Category=="31"|fb_data$Page_Category=="36"|fb_data$Page_Category=="37"|fb_data$Page_Category=="46"|fb_data$Page_Category=="66"|fb_data$Page_Category=="104")
+data<-fb_data[select,]
+data$Page_Category<-as.factor(data$Page_Category)
+levels(data$Page_Category)
+table(data$Page_Category)
+barplot(table(data$Page_Category))
+qqnorm(data$y_comments)#normal dist. or not
+qqline(data$y_comments)
