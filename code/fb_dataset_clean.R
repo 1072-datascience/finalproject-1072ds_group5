@@ -59,3 +59,20 @@ table(data$Page_Category)
 barplot(table(data$Page_Category))
 qqnorm(data$y_comments)#normal dist. or not
 qqline(data$y_comments)
+
+##comment categorized
+quantile(data$y_comments,c(0.2,0.4,0.6,0.8))
+for (i in 1:nrow(data)){
+  if (data$y_comments[i]<=6){
+    data$y_comments[i]<-1
+  }else if(data$y_comments[i]>6 & data$y_comments[i]<=17){
+    data$y_comments[i]<-2
+  }else if(data$y_comments[i]>17 & data$y_comments[i]<=39){
+    data$y_comments[i]<-3
+  }else if(data$y_comments[i]>39 & data$y_comments[i]<=106){
+    data$y_comments[i]<-4
+  }else{
+    data$y_comments[i]<-5
+  }
+}
+write.csv(data,file="data.csv",row.names = F)
