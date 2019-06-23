@@ -56,7 +56,7 @@ data<-fb_data[select,]
 data$Page_Category<-as.factor(data$Page_Category)
 levels(data$Page_Category)
 table(data$Page_Category)
-barplot(table(data$Page_Category))
+barplot(table(data$Page_Category),col = "rosybrown2")
 qqnorm(data$y_comments)#normal dist. or not
 qqline(data$y_comments)
 
