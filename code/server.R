@@ -1,4 +1,3 @@
-
 fb_total <- read.csv("fb_data_total.csv" , header = T)
 
 names(fb_total)[14:20] <- c(7,1,2,3,4,5,6)
