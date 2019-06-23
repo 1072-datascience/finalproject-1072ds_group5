@@ -38,7 +38,7 @@ testData <- finaldata[-trainIndex,]
 print("split test data:finished")
 
 #build model
-model_rf <- randomForest(factor(y_comments)~.,data = trainData,ntree=500,nodesize=3,mtry = 34)
+model_rf <- randomForest(factor(y_comments)~.,data = trainData,ntree=100,nodesize=3,mtry = 31)
 print("build model:finished")
 
 #predict test data
