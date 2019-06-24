@@ -8,14 +8,12 @@
 * < 徐安安, 105304045 >
 
 ### Goal
-A breif introduction about your project, i.e., what is your goal?
-
+分析Facebook 貼文資料集，目的希望能建立預測留言數量的模型，並且用於評估貼文成效好壞。
 ### Demo 
-You should provide an example commend to reproduce your result
 ```R
 Rscript code/your_script.R --input data/training --output results/performance.tsv
 ```
-* any on-line visualization
+* Shiny App Link:
 
 ## Folder organization and its related information
 
@@ -27,7 +25,9 @@ Rscript code/your_script.R --input data/training --output results/performance.ts
 
 ### data
 
-* Source
+* Source(from UCI):
+http://archive.ics.uci.edu/ml/datasets/Facebook+Comment+Volume+Dataset?fbclid=IwAR3s-QeEUKL4pzURY_CL6KK8x3yoUQQZaJztk2V3wNenQHLlI5xflSNHAxU
+
 * Input format
 * Any preprocessing?
   * Handle missing data
