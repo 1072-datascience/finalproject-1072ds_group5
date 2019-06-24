@@ -43,8 +43,8 @@ http://archive.ics.uci.edu/ml/datasets/Facebook+Comment+Volume+Dataset?fbclid=Iw
 * Which metric do you use : Accuracy only (Since our data is balanced among different categories)
 * Our improvement is not significant but with more applicability. 
 * What is the challenge part of your project?
-  *The original data is messy and exists lots of missing value, and our target variable(comments) is widely distributed
-  *It's not that difficult to build a model to predict any variables in our dataset, but we think to make the conclusion applicable is the point.
+  * The original data is messy and exists lots of missing value, and our target variable(comments) is widely distributed
+  * It's not that difficult to build a model to predict any variables in our dataset, but we think to make the conclusion applicable is the point.
 
 ## Reference
 * Code/implementation which you include/reference 
