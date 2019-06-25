@@ -13,7 +13,7 @@
 ```R
 Rscript model_rf.R --data data.csv
 ```
-* Shiny App Link:
+* Shiny App Link:https://mulderfang.shinyapps.io/shinyapp/
 
 ## Folder organization and its related information
 
